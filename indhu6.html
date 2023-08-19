@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ki"></div>
+    <br><br>
+    <div id="ik"></div>
+    <style>
+        #ki{
+            width: 101px;
+            height: 101px;
+            background-color: aquamarine;
+            transition:width 2s,height 5s, transform 5s ;
+        }
+      #ki:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+        #ik{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 153, 0);
+            animation-name: t;
+            position: relative;
+            animation-duration: 5s;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        @keyframes t{
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:rgb(231, 68, 95); left:0px; top:0px;}
+}
+    </style>
+</body>
+</html>
